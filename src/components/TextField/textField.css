@@ -7,7 +7,16 @@
 }
 .textfield-label {
   color: black;
-  font-size: 16px;
+  margin-left: 1em;
+}
+.textfield-label--small {
+  font-size: 10px;
+}
+.textfield-label--medium {
+  font-size: 12px;
+}
+.textfield-label--large {
+  font-size: 14px;
 }
 .textfield-input {
   color: black;

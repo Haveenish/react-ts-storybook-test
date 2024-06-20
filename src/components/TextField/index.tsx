@@ -47,7 +47,7 @@ const TextField = ({
 
   return (
     <div className="textfield-wrapper">
-      <label className="textfield-label">{label}</label>
+      {!!label && <label className={`textfield-label textfield-label--${size}`}>{label}</label>}
       <input
         type="text"
         value={value}
