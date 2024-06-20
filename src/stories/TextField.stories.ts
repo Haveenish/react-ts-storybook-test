@@ -17,8 +17,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    label: "Input text",
     value: "Test",
+  },
+};
+
+export const InputWithLabel: Story = {
+  args: {
+    value: "Test",
+    label: "Input text"
   },
 };
 
