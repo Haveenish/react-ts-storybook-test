@@ -22,6 +22,10 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * Optional button icon
+   */
+  icon?: React.ReactNode;
 }
 
 const Button = ({
@@ -29,15 +33,19 @@ const Button = ({
   size = "medium",
   backgroundColor,
   label,
+  onClick,
+  icon,
 }: ButtonProps) => {
-  const mode = primary ? "button--primary" : "button--secondary";
-
   return (
     <button
       type="button"
-      className={`button button--${size} ${mode}`}
+      className={`button button--${size} button--${primary ? "primary" : "secondary"}`}
+      onClick={onClick}
       style={{ backgroundColor }}
     >
+      {!!icon && (
+        <span className="button-icon">{icon}</span>
+      )}
       {label}
     </button>
   );

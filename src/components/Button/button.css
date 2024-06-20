@@ -1,11 +1,11 @@
 .button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
+  display: flex;
+  align-items: center;
   border: 0;
   border-radius: 3em;
   cursor: pointer;
-  display: inline-block;
-  line-height: 1;
 }
 .button--primary {
   color: white;
@@ -27,4 +27,8 @@
 .button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+.button-icon {
+  display: flex;
+  width: 3em;
 }
